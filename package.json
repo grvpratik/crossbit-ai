@@ -1,0 +1,39 @@
+{
+  "name": "upmint-monorepo",
+  "version": "1.0.0",
+  "description": "UpMint project monorepo containing API and UI",
+  "private": true,
+  "workspaces": [
+    "api",
+    "ui"
+  ],
+  "scripts": {
+    "dev:api": "cd api && pnpm dev",
+    "dev:ui": "cd ui && pnpm dev",
+    "dev": "concurrently \"pnpm dev:api\" \"pnpm dev:ui\"",
+    "build:api": "cd api && pnpm build",
+    "build:ui": "cd ui && pnpm build",
+    "build": "pnpm build:api && pnpm build:ui",
+    "install:all": "cd api && pnpm install && cd ../ui && pnpm install",
+    "clean": "rm -rf api/node_modules ui/node_modules api/dist ui/dist",
+    "lint:api": "cd api && pnpm lint",
+    "lint:ui": "cd ui && pnpm lint",
+    "lint": "pnpm lint:api && pnpm lint:ui",
+    "test:api": "cd api && pnpm test",
+    "test:ui": "cd ui && pnpm test",
+    "test": "pnpm test:api && pnpm test:ui"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "monorepo",
+    "api",
+    "ui",
+    "typescript",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+} 

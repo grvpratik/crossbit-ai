@@ -1,0 +1,43 @@
+import { BPF_LOADER_DEPRECATED_PROGRAM_ID, PublicKey } from "@solana/web3.js";
+
+/** Address of the SPL Associated Token Account program */
+export const ASSOCIATED_TOKEN_PROGRAM_ID = new PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL');
+
+
+/** Address of the SPL Token program */
+export const TOKEN_PROGRAM_ID = new PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA');
+
+
+export const TOKEN_DECIMALS = 6
+// Calculated as the first 8 bytes of: `sha256("account:BondingCurve")`.
+export const EXPECTED_DISCRIMINATOR = Buffer.from([
+  0x17, 0xb7, 0xf8, 0x37, 0x60, 0xd8, 0xac, 0x60,
+])
+export const PUMP_PROGRAM_ID = new PublicKey(
+  '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P'
+)
+export const WSOL = 'So11111111111111111111111111111111111111112'
+export const PUMPFUN_UPDATE_AUTHORITY = 'TSLvdd1pWpHVjahSpsvCXUbgwsL3JAcvokwaKt1eokM'
+export const validSolanaAddressRegex = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/
+export const PROGRAM = {
+  // SYSTEM PROGRAM
+  BPF_LOADER_PROGRAM_ID:'BPFLoaderUpgradeab1e11111111111111111111111',
+  SYSTEM: '11111111111111111111111111111111',
+  NATIVE_MINT: 'So11111111111111111111111111111111111111112',
+  ASSOCIATED_TOKEN_PROGRAM_ID: 'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL',
+  TOKEN_PROGRAM_ID: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
+  TOKEN_2022_PROGRAM_ID: 'TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb',
+//MARKET
+  PUMPFUN: '6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P',
+  PUMPFUN_AMM: 'pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA',
+  RAYDIAM_AMM_ROUTING: 'routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS',
+  JUPITER_V6: 'JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4',
+  JUPITER_V4: 'JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB',
+  RAYDIUM_CONCENTRATED_LIQUIDITY:
+    'CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK',
+  RAYDIUM_CPMM: 'CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C',
+  RAYDIUM_AMM: '5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h',
+  RAYDIUM_V4: '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8',
+  METEORA_DLMM: 'LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo',
+  ORCA_WHIRLPOOL: 'whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc',
+}
