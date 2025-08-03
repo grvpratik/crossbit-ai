@@ -1,11 +1,11 @@
-# UpMint - Monorepo
+# Crossbit - Monorepo
 
-This is a monorepo containing both the API backend and UI frontend for the UpMint project.
+This is a monorepo containing both the API backend and UI frontend for the Crossbit project.
 
 ## Project Structure
 
 ```
-upmint/
+Crossbit/
 ├── api/          # Backend API (Node.js/TypeScript)
 ├── ui/           # Frontend UI (React/Vite)
 ├── .gitignore    # Monorepo gitignore
@@ -25,7 +25,7 @@ upmint/
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd upmint
+cd Crossbit
 ```
 
 2. Install dependencies for both projects:
