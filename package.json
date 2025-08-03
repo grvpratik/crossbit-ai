@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "UpMint project monorepo containing API and UI",
   "private": true,
-  "workspaces": [
-    "api",
-    "ui"
-  ],
   "scripts": {
     "dev:api": "cd api && pnpm dev",
     "dev:ui": "cd ui && pnpm dev",
